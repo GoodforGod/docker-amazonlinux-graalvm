@@ -3,8 +3,7 @@ WORKDIR /home/application
 
 ENV LANG=en_US.UTF-8
 
-RUN yum install -y gcc gcc-c++ libc6-dev zlib1g-dev curl bash zlib zlib-devel zip
-RUN amazon-linux-extras install java-openjdk11
+RUN yum install -y gcc gcc-c++ libc6-dev zlib1g-dev curl bash zlib zlib-devel zip java-11-amazon-corretto
 
 ENV GRAAL_VERSION 21.1.0
 ENV JDK_VERSION java11
