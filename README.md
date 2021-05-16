@@ -15,5 +15,5 @@ Image comes with GraalVM compiler, Java 11 (Corretto) and is ready to build Graa
 Image tags against GraalVM versions.
 
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:21.1.0
+FROM goodforgod/amazonlinux-graalvm:21.0.0.2
 ```
