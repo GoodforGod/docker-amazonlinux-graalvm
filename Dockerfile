@@ -5,7 +5,7 @@ ENV LANG=en_US.UTF-8
 
 RUN yum install -y gcc gcc-c++ libc6-dev zlib1g-dev curl bash zlib zlib-devel zip java-11-amazon-corretto
 
-ENV GRAAL_VERSION 21.1.0
+ENV GRAAL_VERSION 21.0.0.2
 ENV JDK_VERSION java11
 ENV GRAAL_FILENAME graalvm-ce-${JDK_VERSION}-linux-amd64-${GRAAL_VERSION}.tar.gz
 
