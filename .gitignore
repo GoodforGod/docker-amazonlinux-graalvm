@@ -1,0 +1,21 @@
+template
+build
+
+# Package Files #
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Gradle template
+.gradle
+build/
+
+# Idea generated files
+.idea
+.idea/httpRequestsa
+/out/
+/orgstaff.iml
+*.iml
