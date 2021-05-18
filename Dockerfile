@@ -15,4 +15,9 @@ RUN tar -zxvf /tmp/${GRAAL_FILENAME} -C /tmp \
     && mv /tmp/graalvm-ce-${JDK_VERSION}-${GRAAL_VERSION} /usr/lib/graalvm
 
 RUN rm -rf /tmp/*
+
+RUN /usr/lib/graalvm/bin/gu install native-image
+
+ENV PATH="/usr/lib/graalvm/bin:${PATH}"
+
 CMD ["/usr/lib/graalvm/bin/native-image"]

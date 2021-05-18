@@ -10,6 +10,12 @@ Docker Image with Amazon Linux and GraalVM for building Java GraalVM compatible 
 
 Image comes with GraalVM compiler, Java 11 (Corretto) and is ready to build GraalVM Compatible executables, check [AWS Java Runtime template](https://github.com/GoodforGod/aws-lambda-template/blob/master/Dockerfile) for example.
 
+GraalVM is added on path, so you can use it directly
+
+```shell
+RUN native-image --no-server -cp app.jar
+```
+
 ## Tags
 
 Image tags against GraalVM versions.
