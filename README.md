@@ -16,6 +16,10 @@ GraalVM is added on path, so you can use it directly
 RUN native-image --no-server -cp app.jar
 ```
 
+## Options
+
+Check GraalVM native-image [options](https://www.graalvm.org/reference-manual/native-image/Options/)
+
 ## Tags
 
 Image tags against GraalVM versions.
