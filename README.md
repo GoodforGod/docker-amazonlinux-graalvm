@@ -15,7 +15,7 @@ Image comes with GraalVM compiler, Java 11 (Corretto) and is ready to build Graa
 GraalVM is on path, so you can use it directly.
 
 ```shell
-RUN native-image --no-server -cp app.jar
+RUN native-image -cp app.jar
 ```
 
 ## Tags
@@ -24,6 +24,16 @@ Image tags against GraalVM versions.
 
 Check releases for corresponding versions or [Docker Hub page](https://hub.docker.com/repository/docker/goodforgod/amazonlinux-graalvm/tags?page=1&ordering=last_updated).
 
+### Java 17
+
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:21.2.0
+FROM goodforgod/amazonlinux-graalvm:21.3.0-java17
 ```
+
+### Java 11
+
+```dockerfile
+FROM goodforgod/amazonlinux-graalvm:21.3.0-java11
+```
+
+
