@@ -10,6 +10,8 @@ Image based on [Amazon Linux 2](https://hub.docker.com/_/amazonlinux/) and [Amaz
 
 ## Tags
 
+Tag main name correspond to [GraalVM release version](https://github.com/graalvm/graalvm-ce-builds)
+
 Check releases for corresponding versions or [Docker Hub page](https://hub.docker.com/repository/docker/goodforgod/amazonlinux-graalvm/tags?page=1&ordering=last_updated).
 
 ### GraalVM for Java 17
@@ -38,7 +40,7 @@ FROM goodforgod/amazonlinux-graalvm:21.3.0-java17
 
 ### Bundle
 
-Image comes with:
+Image ships with:
 - JDK 11 (Corretto) or JDK 17 (Corretto) depending on what image tag you selected
 - Gradle 7.2
 - Maven 3.8.3
@@ -49,6 +51,6 @@ Image comes with:
 GraalVM is on path, so you can use it directly, check [Micronaut AWS Lambda template](https://github.com/GoodforGod/micronaut-aws-lambda-template/blob/master/Dockerfile) for example.
 
 ```shell
-RUN native-image -cp app.jar
+RUN native-image --no-fallback -classpath app.jar
 ```
 
