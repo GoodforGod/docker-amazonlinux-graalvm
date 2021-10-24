@@ -1,4 +1,4 @@
-# Docker Amazon Linux with Graalvm
+# Docker Amazon Linux with GraalVM
 
 [![Docker pulls](https://img.shields.io/docker/pulls/goodforgod/amazonlinux-graalvm.svg)](https://registry.hub.docker.com/v2/repositories/goodforgod/amazonlinux-graalvm/)
 [![Docker Stars](https://img.shields.io/docker/stars/goodforgod/amazonlinux-graalvm.svg)](https://registry.hub.docker.com/v2/repositories/goodforgod/amazonlinux-graalvm/)
@@ -17,11 +17,11 @@ Check releases for corresponding versions or [Docker Hub page](https://hub.docke
 ### GraalVM for Java 17
 
 ### amd64
-- [goodforgod/amazonlinux-graalvm:21.3.0-java11](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
-- [goodforgod/amazonlinux-graalvm:21.3.0-java11-amd64](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.0-java17](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.0-java17-amd64](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
 
 ### arm64v8
-- [goodforgod/amazonlinux-graalvm:21.3.0-java11-arm64v8](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/arm64v8/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.0-java17-arm64v8](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/arm64v8/Dockerfile)
 
 ### GraalVM for Java 11
 
