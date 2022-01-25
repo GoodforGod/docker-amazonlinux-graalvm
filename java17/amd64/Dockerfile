@@ -14,7 +14,7 @@ RUN yum install -y tar gcc gcc-c++ curl bash zlib zlib-devel glibc-static zip gz
 ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 # GRADLE
-ENV GRADLE_VERSION=7.2
+ENV GRADLE_VERSION=7.3.3
 ENV GRADLE_FILENAME=gradle-${GRADLE_VERSION}-bin.zip
 
 RUN curl -4 -L https://services.gradle.org/distributions/${GRADLE_FILENAME} -o /tmp/${GRADLE_FILENAME}
@@ -24,7 +24,7 @@ ENV PATH="/opt/gradle-${GRADLE_VERSION}/bin:${PATH}"
 RUN gradle --version
 
 # MAVEN
-ENV MAVEN_VERSION=3.8.3
+ENV MAVEN_VERSION=3.8.4
 ENV MAVEN_FILENAME=apache-maven-${MAVEN_VERSION}-bin.zip
 
 RUN curl -4 -L https://dlcdn.apache.org/maven/maven-3/${MAVEN_VERSION}/binaries/${MAVEN_FILENAME} -o /tmp/${MAVEN_FILENAME}
@@ -34,7 +34,7 @@ ENV PATH="/opt/apache-maven-${MAVEN_VERSION}/bin:${PATH}"
 RUN mvn --version
 
 # GRAAL
-ENV GRAAL_VERSION=21.3.0
+ENV GRAAL_VERSION=22.0.0
 ENV GRAAL_ARCHITECTURE=amd64
 ENV GRAAL_JDK_VERSION=java17
 ENV GRAAL_FILENAME=graalvm-ce-${GRAAL_JDK_VERSION}-linux-${GRAAL_ARCHITECTURE}-${GRAAL_VERSION}.tar.gz
