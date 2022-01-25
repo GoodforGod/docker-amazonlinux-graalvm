@@ -13,11 +13,11 @@ docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_11_VERS
 docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_11_VERSION}-${PLATFORM_ARM} ./${JAVA_11_VERSION}/${PLATFORM_ARM}
 
 ## JAVA 17
-docker build -t goodforgod/amazonlinux-graalvm:latest ./${JAVA_17_VERSION}/${PLATFORM_AMD}
 docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION} ./${JAVA_17_VERSION}/${PLATFORM_AMD}
 docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION} ./${JAVA_17_VERSION}/${PLATFORM_AMD}
 docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}-${PLATFORM_AMD} ./${JAVA_17_VERSION}/${PLATFORM_AMD}
 docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}-${PLATFORM_ARM} ./${JAVA_17_VERSION}/${PLATFORM_ARM}
+docker build -t goodforgod/amazonlinux-graalvm:latest ./${JAVA_17_VERSION}/${PLATFORM_AMD}
 
 
 # PUSH
