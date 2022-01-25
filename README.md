@@ -17,40 +17,39 @@ Check releases for corresponding versions or [Docker Hub page](https://hub.docke
 ### GraalVM for Java 17
 
 ### amd64
-- [goodforgod/amazonlinux-graalvm:21.3.0-java17](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
-- [goodforgod/amazonlinux-graalvm:21.3.0-java17-amd64](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.1-java17](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.1-java17-amd64](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/amd64/Dockerfile)
 
 ### arm64v8
-- [goodforgod/amazonlinux-graalvm:21.3.0-java17-arm64v8](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/arm64v8/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.1-java17-arm64v8](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java17/arm64v8/Dockerfile)
 
 ### GraalVM for Java 11
 
 ### amd64
-- [goodforgod/amazonlinux-graalvm:21.3.0-java11](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java11/amd64/Dockerfile)
-- [goodforgod/amazonlinux-graalvm:21.3.0-java11-amd64](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java11/amd64/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.1-java11](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java11/amd64/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.1-java11-amd64](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java11/amd64/Dockerfile)
 
 ### arm64v8  
-- [goodforgod/amazonlinux-graalvm:21.3.0-java11-arm64v8](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java11/arm64v8/Dockerfile)
+- [goodforgod/amazonlinux-graalvm:21.3.1-java11-arm64v8](https://github.com/GoodforGod/docker-amazonlinux-graalvm/blob/master/java11/arm64v8/Dockerfile)
 
-#### Example
+#### Usage
 
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:21.3.0-java17
+FROM goodforgod/amazonlinux-graalvm:21.3.1-java17
 ```
 
 ### Bundle
 
 Image ships with:
-- JDK 11 (Corretto) or JDK 17 (Corretto) depending on what image tag you selected
-- Gradle 7.2
-- Maven 3.8.3
+- JDK 11 (Corretto) or JDK 17 (Corretto)
+- Gradle 7.3.3
+- Maven 3.8.4
 - GraalVM native-image
 
-### GraalVM
+### GraalVM Native Image
 
-GraalVM is on path, so you can use it directly, check [Micronaut AWS Lambda template](https://github.com/GoodforGod/micronaut-aws-lambda-template/blob/master/Dockerfile) for example.
+GraalVM is on path, so you can use it directly, check [Micronaut AWS Lambda template](https://github.com/GoodforGod/micronaut-awslambda-function-template/blob/master/Dockerfile) for example.
 
 ```shell
 RUN native-image --no-fallback -classpath app.jar
 ```
-
