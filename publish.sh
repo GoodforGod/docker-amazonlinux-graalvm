@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-GRAALVM_VERSION="21.3.1"
+GRAALVM_VERSION="22.0.0.2"
 JAVA_11_VERSION="java11"
 JAVA_17_VERSION="java17"
 PLATFORM_AMD="amd64"
@@ -20,7 +20,7 @@ docker build -t goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERS
 docker build -t goodforgod/amazonlinux-graalvm:latest ./${JAVA_17_VERSION}/${PLATFORM_AMD}
 
 
-# PUSH
+## PUSH
 ## JAVA 11
 docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_11_VERSION}-${PLATFORM_ARM}
 docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_11_VERSION}-${PLATFORM_AMD}
