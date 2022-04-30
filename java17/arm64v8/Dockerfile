@@ -1,4 +1,4 @@
-FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20211223.0 as graalvm
+FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20220419.0 as graalvm
 
 WORKDIR /home/application
 
@@ -31,7 +31,7 @@ ENV PATH="/opt/apache-maven-${MAVEN_VERSION}/bin:${PATH}"
 RUN mvn --version
 
 # GRAAL
-ENV GRAAL_VERSION=22.0.0.2
+ENV GRAAL_VERSION=22.1
 ENV GRAAL_ARCHITECTURE=aarch64
 ENV GRAAL_JDK_VERSION=java17
 ENV GRAAL_FILENAME=graalvm-ce-${GRAAL_JDK_VERSION}-linux-${GRAAL_ARCHITECTURE}-${GRAAL_VERSION}.tar.gz
