@@ -18,32 +18,32 @@ Check releases for corresponding versions or [Docker Hub page](https://hub.docke
 
 #### amd64 (x86-64 architecture)
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.1-java17
+FROM goodforgod/amazonlinux-graalvm:22.1.0-java17
 ```
 
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.1-java17-amd64
+FROM goodforgod/amazonlinux-graalvm:22.1.0-java17-amd64
 ```
 
 #### arm64v8
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.1-java17-arm64v8
+FROM goodforgod/amazonlinux-graalvm:22.1.0-java17-arm64v8
 ```
 
 ### GraalVM for Java 11
 
 #### amd64 (x86-64 architecture)
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.1-java11
+FROM goodforgod/amazonlinux-graalvm:22.1.0-java11
 ```
 
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.1-java11-amd64
+FROM goodforgod/amazonlinux-graalvm:22.1.0-java11-amd64
 ```
 
 #### arm64v8  
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.1-java11-arm64v8
+FROM goodforgod/amazonlinux-graalvm:22.1.0-java11-arm64v8
 ```
 
 ## Bundle
