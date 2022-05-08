@@ -1,4 +1,4 @@
-FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20211223.0 as graalvm
+FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20220419.0 as graalvm
 
 WORKDIR /home/application
 
@@ -11,7 +11,7 @@ RUN yum install -y tar gcc gcc-c++ curl bash zlib zlib-devel glibc-static zip gz
 ENV JAVA_HOME=/usr/lib/jvm/jre-17
 
 # GRADLE
-ENV GRADLE_VERSION=7.3.3
+ENV GRADLE_VERSION=7.4.2
 ENV GRADLE_FILENAME=gradle-${GRADLE_VERSION}-bin.zip
 
 RUN curl -4 -L https://services.gradle.org/distributions/${GRADLE_FILENAME} -o /tmp/${GRADLE_FILENAME} \
@@ -21,7 +21,7 @@ ENV PATH="/opt/gradle-${GRADLE_VERSION}/bin:${PATH}"
 RUN gradle --version
 
 # MAVEN
-ENV MAVEN_VERSION=3.8.4
+ENV MAVEN_VERSION=3.8.5
 ENV MAVEN_FILENAME=apache-maven-${MAVEN_VERSION}-bin.zip
 
 RUN curl -4 -L https://dlcdn.apache.org/maven/maven-3/${MAVEN_VERSION}/binaries/${MAVEN_FILENAME} -o /tmp/${MAVEN_FILENAME} \
@@ -31,7 +31,7 @@ ENV PATH="/opt/apache-maven-${MAVEN_VERSION}/bin:${PATH}"
 RUN mvn --version
 
 # GRAAL
-ENV GRAAL_VERSION=22.0.0.2
+ENV GRAAL_VERSION=22.1.0
 ENV GRAAL_ARCHITECTURE=aarch64
 ENV GRAAL_JDK_VERSION=java17
 ENV GRAAL_FILENAME=graalvm-ce-${GRAAL_JDK_VERSION}-linux-${GRAAL_ARCHITECTURE}-${GRAAL_VERSION}.tar.gz
