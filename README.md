@@ -50,8 +50,8 @@ FROM goodforgod/amazonlinux-graalvm:22.2.0-java11-arm64v8
 
 Image ships with:
 - JDK 11 (Corretto) or JDK 17 (Corretto)
-- Gradle 7.4.2
-- Maven 3.8.5
+- Gradle 7.5.1
+- Maven 3.8.6
 - GraalVM native-image
 
 ## GraalVM Native Image

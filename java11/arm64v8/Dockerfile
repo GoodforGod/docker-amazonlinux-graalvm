@@ -11,7 +11,7 @@ RUN yum install -y tar gcc gcc-c++ curl bash zlib zlib-devel glibc-static zip gz
 ENV JAVA_HOME=/usr/lib/jvm/jre-11
 
 # GRADLE
-ENV GRADLE_VERSION=7.4.2
+ENV GRADLE_VERSION=7.5.1
 ENV GRADLE_FILENAME=gradle-${GRADLE_VERSION}-bin.zip
 
 RUN curl -4 -L https://services.gradle.org/distributions/${GRADLE_FILENAME} -o /tmp/${GRADLE_FILENAME} \
@@ -21,7 +21,7 @@ ENV PATH="/opt/gradle-${GRADLE_VERSION}/bin:${PATH}"
 RUN gradle --version
 
 # MAVEN
-ENV MAVEN_VERSION=3.8.5
+ENV MAVEN_VERSION=3.8.6
 ENV MAVEN_FILENAME=apache-maven-${MAVEN_VERSION}-bin.zip
 
 RUN curl -4 -L https://dlcdn.apache.org/maven/maven-3/${MAVEN_VERSION}/binaries/${MAVEN_FILENAME} -o /tmp/${MAVEN_FILENAME} \
