@@ -1,4 +1,4 @@
-FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20220419.0 as graalvm
+FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20220719.0 as graalvm
 
 WORKDIR /home/application
 
@@ -8,7 +8,7 @@ RUN yum install -y tar gcc gcc-c++ curl bash zlib zlib-devel glibc-static zip gz
     && yum upgrade -y \
     && yum autoremove
 
-ENV JAVA_HOME=/usr/lib/jvm/jre-17
+ENV JAVA_HOME=/usr/lib/jvm/java-17
 
 # GRADLE
 ENV GRADLE_VERSION=7.5.1
