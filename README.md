@@ -14,6 +14,22 @@ Tag main name correspond to [GraalVM release version](https://github.com/graalvm
 
 Check releases for corresponding versions or [Docker Hub page](https://hub.docker.com/repository/docker/goodforgod/amazonlinux-graalvm/tags?page=1&ordering=last_updated).
 
+### GraalVM for Java 19
+
+#### amd64 (x86-64 architecture)
+```dockerfile
+FROM goodforgod/amazonlinux-graalvm:22.3.0-java19
+```
+
+```dockerfile
+FROM goodforgod/amazonlinux-graalvm:22.3.0-java19-amd64
+```
+
+#### arm64v8
+```dockerfile
+FROM goodforgod/amazonlinux-graalvm:22.3.0-java19-arm64v8
+```
+
 ### GraalVM for Java 17
 
 #### amd64 (x86-64 architecture)
@@ -49,7 +65,7 @@ FROM goodforgod/amazonlinux-graalvm:22.3.0-java11-arm64v8
 ## Bundle
 
 Image ships with:
-- JDK 11 (Corretto) or JDK 17 (Corretto)
+- JDK 11 (Corretto) or JDK 17 (Corretto) or JDK 19 (Corretto)
 - Gradle 7.5.1
 - Maven 3.8.6
 - GraalVM native-image
