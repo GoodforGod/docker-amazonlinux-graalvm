@@ -1,4 +1,4 @@
-FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20230612.0 as graalvm
+FROM --platform=linux/arm/v8 arm64v8/amazonlinux:2.0.20230612.0 AS graalvm
 
 WORKDIR /home/application
 
