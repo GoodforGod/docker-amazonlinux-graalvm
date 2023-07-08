@@ -14,66 +14,50 @@ Tag main name correspond to [GraalVM release version](https://github.com/graalvm
 
 Check releases for corresponding versions or [Docker Hub page](https://hub.docker.com/repository/docker/goodforgod/amazonlinux-graalvm/tags?page=1&ordering=last_updated).
 
-### GraalVM for Java 19
-
-#### amd64 (x86-64 architecture)
-```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java19
-```
-
-```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java19-amd64
-```
-
-#### arm64v8
-```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java19-arm64v8
-```
-
 ### GraalVM for Java 17
 
 #### amd64 (x86-64 architecture)
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java17
+FROM goodforgod/amazonlinux-graalvm:23.0.0-java17
 ```
 
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java17-amd64
+FROM goodforgod/amazonlinux-graalvm:23.0.0-java17-amd64
 ```
 
 #### arm64v8
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java17-arm64v8
+FROM goodforgod/amazonlinux-graalvm:23.0.0-java17-arm64v8
 ```
 
-### GraalVM for Java 11
+### GraalVM for Java 20
 
 #### amd64 (x86-64 architecture)
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java11
+FROM goodforgod/amazonlinux-graalvm:23.0.0-java20
 ```
 
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java11-amd64
+FROM goodforgod/amazonlinux-graalvm:23.0.0-java20-amd64
 ```
 
 #### arm64v8  
 ```dockerfile
-FROM goodforgod/amazonlinux-graalvm:22.3.1-java11-arm64v8
+FROM goodforgod/amazonlinux-graalvm:23.0.0-java20-arm64v8
 ```
 
 ## Bundle
 
 Image ships with:
-- Amazon Linux `2.0.20230320.0`
-- JDK `11` (Corretto) or JDK `17` (Corretto) or JDK `19` (Corretto)
-- Gradle `8.1.1`
-- Maven `3.9.1`
-- GraalVM native-image `22.3.1`
+- Amazon Linux `2.0.20230612.0`
+- JDK `17` (Corretto) or JDK `20` (Corretto)
+- Gradle `8.2`
+- Maven `3.9.3`
+- GraalVM native-image `23.0.0`
 
 ## GraalVM Native Image
 
-GraalVM is on path, so you can use it directly, check [Micronaut AWS Lambda template](https://github.com/GoodforGod/micronaut-awslambda-function-template/blob/master/Dockerfile) for example.
+GraalVM is on path, so you can use it directly, check [AWS Lambda template](https://github.com/GoodforGod/micronaut-awslambda-function-template/blob/master/Dockerfile) for example.
 
 ```shell
 RUN native-image --no-fallback -classpath app.jar
