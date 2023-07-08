@@ -60,13 +60,13 @@ fi
 
 ### PUSH
 ### JAVA 17
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}-${PLATFORM_ARM}
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}-${PLATFORM_AMD}
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}
-#
-### JAVA 19
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_20_VERSION}-${PLATFORM_ARM}
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_20_VERSION}-${PLATFORM_AMD}
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_20_VERSION}
-#docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}
-#docker push goodforgod/amazonlinux-graalvm:latest
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}-${PLATFORM_ARM}
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}-${PLATFORM_AMD}
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_17_VERSION}
+
+### JAVA 20
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_20_VERSION}-${PLATFORM_ARM}
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_20_VERSION}-${PLATFORM_AMD}
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}-${JAVA_20_VERSION}
+docker push goodforgod/amazonlinux-graalvm:${GRAALVM_VERSION}
+docker push goodforgod/amazonlinux-graalvm:latest
