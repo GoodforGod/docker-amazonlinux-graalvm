@@ -51,8 +51,8 @@ FROM goodforgod/amazonlinux-graalvm:23.0.0-java20-arm64v8
 Image ships with:
 - Amazon Linux `2.0.20230612.0`
 - JDK `17` (Corretto) or JDK `20` (Corretto)
-- Gradle `8.2`
-- Maven `3.9.3`
+- Gradle `8.2.1`
+- Maven `3.9.4`
 - GraalVM native-image `23.0.0`
 
 ## GraalVM Native Image
